@@ -19,6 +19,14 @@ pipeline {
                 cleanWs()
                 }
         }
+		stage('Check Java') {
+            steps {
+                sh '''
+                    java -version
+                    mvn -version
+                '''
+            }
+        }
 
         stage("Checkout from SCM"){
                 steps {
