@@ -22,20 +22,6 @@
 
     <build>
         <finalName>${project.artifactId}</finalName>
-
-        <plugins>
-
-            <!-- Compile Server with Java 21 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.14.1</version>
-                <configuration>
-                    <release>21</release>
-                </configuration>
-            </plugin>
-
-        </plugins>
     </build>
 
     <dependencies>
